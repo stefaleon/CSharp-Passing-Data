@@ -199,33 +199,34 @@ Follow the below steps:
 
 Step 1: Add a delegate signature to form1 as below
 
-     public delegate void delPassData(TextBox text);
+     public delegate void PassDataDelegate(TextBox textBox);
 
-Step 2: In form1's button click event handler instantiate form2 class and delegate. Assign a function in form2 to the delegate and call the delegate as below
 
-     private void btnSend_Click(object sender, System.EventArgs e)
+Step 2: In form2, add a function to which the delegate should point to. This function will assign textbox's text to the label.
 
-     {
+      public void GetTheTextBoxData(TextBox textBox)      
+      {
+        label1.Text = textBox.Text;
+      }
 
-          Form2 frm= new Form2();
 
-          delPassData del=new delPassData(frm.funData);
 
-          del(this.textBox1);
+Step 3: In form1's button click event handler instantiate form2 class and delegate. Assign a function in form2 to the delegate and call the delegate as below
 
-          frm.Show();
+```
+   private void button1_Click(object sender, System.EventArgs e)
+   {
+       var form2 = new Form2();
 
-     }
+       var passDataDelegate = new PassDataDelegate(form2.GetTheTextBoxData);
 
-Step 3: In form2, add a function to which the delegate should point to. This function will assign textbox's text to the label.
+       passDataDelegate(textBox1);
 
-     public void funData(TextBox txtForm1)
+       form2.Show();
+   }
+```
 
-     {
 
-          label1.Text = txtForm1.Text;
-
-     }
 
 
 

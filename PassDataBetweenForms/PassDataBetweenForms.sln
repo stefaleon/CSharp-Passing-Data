@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassDataBetweenForms2", "Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassDataBetweenForms3", "PassDataBetweenForms3\PassDataBetweenForms3.csproj", "{0247B086-C9A8-43E4-84E6-0F4E39F2157D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassDataBetweenForms4", "PassDataBetweenForms4\PassDataBetweenForms4.csproj", "{B825B42D-0627-4ED8-827B-ADAE5FBAC81A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0247B086-C9A8-43E4-84E6-0F4E39F2157D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0247B086-C9A8-43E4-84E6-0F4E39F2157D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0247B086-C9A8-43E4-84E6-0F4E39F2157D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B825B42D-0627-4ED8-827B-ADAE5FBAC81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B825B42D-0627-4ED8-827B-ADAE5FBAC81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B825B42D-0627-4ED8-827B-ADAE5FBAC81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B825B42D-0627-4ED8-827B-ADAE5FBAC81A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
